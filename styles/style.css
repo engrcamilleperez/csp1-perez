@@ -3,6 +3,7 @@
 body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
+	color: black !important;
 }
 
 /*CSS Reset*/
@@ -17,8 +18,13 @@ body, html {
   margin: 0;
 }
 
+.full-height {
+  height:  100%;
+}
+
 body {
-	background-image: url("../images/camille-bg.jpg");
+	background-image: url("../images/camille-d10.jpg");
+  color: darkblue;
 }
 
 
@@ -27,10 +33,15 @@ nav {
 	width: 100%;
 }
 
+#home {
+
+
+}
+
 /*Top Navbar start*/
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #808080;
   overflow: hidden;
 }
 
@@ -63,16 +74,21 @@ nav {
 }
 
 /* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
+
+  #footer #contact {
+    display: block;
+    float: center;
+  }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -84,50 +100,51 @@ nav {
     display: block;
     text-align: left;
   }
+
+  #footer #contact {
+    display: block;
+    float: center;
+  }
 }
 
 
+//*/ Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap*/
 
-.header{
-	text-align: center;
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { ... }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { ... }
+
+/*// Large devices (desktops, 992px and up)
+*/
+@media (min-width: 992px) { ... }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+
+#form {
+  background-image: url("../images/camille-d12.jpg");
+  padding: 2rem, 2rem, 2rem, 2rem;
 }
 
 
-div > #projects {
-	background-color: transparent !important;
+#certs{
+  background-image: url("../images/camille-d14.jpg");
+  color: black;
 }
 
-#pre-footer{
-/*change background color*/
-background-color: #002540;
-/*text color*/
-color: white;
-/*padding: 1rem;*/
+#we {
+  background-image: url("../images/camille-d14.jpg");
+  color: black;
 }
 
-#pre-footer > div{
-	display: inline-block;
-	width: 50%;
+#ed {
+  background-image: url("../images/camille-d14.jpg");
+  color: black;
 }
 
-
-#pre-footer > div > *{
-/*	margin-top:  0.3rem;*/
-/*	margin-bottom: 0.3rem;*/
-}
-
-
-footer{
-	/*padding: 0.7rem;*/
-	text-align: center;
-	color: #f2f2f2;
-	/*position: fixed;*/
-}
-
-footer span{
-	/*margin-left: 0.5rem;
-	margin-right: 0.5rem;*/
-}
 
 ul{
 	list-style-type: none;
